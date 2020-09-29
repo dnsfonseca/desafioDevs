@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>Dev's</title>
+  </head>
+  <body>
+    <h1 id="title">
+      <img
+        class="img-language"
+        src="./images/computador.svg"
+        alt="computer-logo"
+      />
+      Search Developer's
+      <img
+        class="img-language"
+        src="./images/computador.svg"
+        alt="computer-logo"
+      />
+    </h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Pesquisar por nome</span>
+            </div>
+            <input
+              type="text"
+              id="inputName"
+              class="form-control rounded-right"
+              required
+            />
+          </div>
+          <br />
+        </div>
+        <div class="col-10" id="filterOptions">
+          <!-- Aqui entram os checkboxes de forma dinâmirca -->
+          <div id="checkboxes" class="form-check form-check-inline"></div>
+        </div>
+        <div class="col-2">
+          <div id="radioButtons">
+            <div class="form-check form-check-inline">
+              <input
+                type="radio"
+                id="radioAnd"
+                name="radioGroup"
+                class="form-check-input"
+              />
+              <label class="form-check-label" for="radioAnd">E</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="radio"
+                id="radioOr"
+                name="radioGroup"
+                class="form-check-input"
+              />
+              <label class="form-check-label" for="radioOr">OU</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 20px" class="dev-card" id="divDevs"></div>
+    </div>
+
+    <br />
+
+    <script defer src="./js/script2.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
